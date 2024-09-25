@@ -1,25 +1,94 @@
-*{ 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, ol, li{
+    list-style: none;
+}
+/* FIM DO RESET*/
 
 body{
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    padding-inline: 64px;
 
 }
 header{
-    background-color: aqua;
-    height: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.logo{
+    height: 64px;
+    width: 64px;
+    background-color: rgb(144, 107, 107);
+}
+
+.menu ul {
+    display: flex;
+    gap: 32px;
+}
+
 main{
-    background-color: pink;
     flex-grow: 1;
+    display: flex;
 }
+.conteudo{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conteudo h1{
+    font-size: 100px;
+}
+.conteudo p{
+    font-size: 50px;
+    width: 90%;
+}
+
+.acao button{
+    height: 100px;
+    width: 400px;
+    font-size: 48px;
+    background-color: black;
+    color: rgb(255, 225, 225);
+}
+.social{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.social div{
+    height: 120px;
+    width: 40px;
+    background-color: rgb(163, 15, 15);
+   
+}
+
+
+.imagem{
+    background-color: rgb(229, 61, 61);
+    height: 90%;
+    width: 64%;
+    background-image: url(./img/outubro-18-sao-lucas.jpg);
+    background-repeat: no-repeat;
+}
+
 footer{
-    background-color: bisque;
-    height: 50px;
+    background-color: rgb(158, 87, 87);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
